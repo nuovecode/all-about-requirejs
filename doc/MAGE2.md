@@ -30,6 +30,15 @@ baseUrl parameter is generated automatically.
          }
        };
        
+Ex to replace color swatches:
+       
+       "map": {
+          "*": {
+            'swatchRenderer': "Vendor_Module/js/customSwatch"
+          }
+       }    
+       
+       
 ###Override default JS components methods       
 
 Declare the mixin as an AMD module (Ex. the checkout steps)
