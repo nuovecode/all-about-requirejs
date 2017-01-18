@@ -18,16 +18,6 @@ Syntax:
        
 Magento2 pass the _config_ variable to a generated piece of code like _require.config( config )_
  
-In addition to standard aliases (path) of RequireJS library, Magento uses module notations or relative paths. 
-For instance:
-
-       var config = {
-           paths: {
-               // configuration for resource 'app/code/Magento/Catalog/view/frontend/product/product.js'
-               "product": "./product/product"
-           }
-       };
-       
 baseUrl parameter is generated automatically.
 
 ###Replace default JS components
@@ -35,18 +25,81 @@ baseUrl parameter is generated automatically.
        var config = {
          "map": {
            "*": {
-             "<default_component>": "<custom_component>"
+             "<default_component>": "<cupstom_component>"
            }
          }
        };
+       
+###Override default JS components methods       
 
-###Extend default JS components
+Declare the mixin as an AMD module (Ex. the checkout steps)
+       
+           config: {
+               mixins: {
+                   'Magento_Checkout/js/model/step-navigator': {
+                       'js/checkoutCustomization': true
+                   }
+       
+               }
+           }
+            
+And define a module that return a callback with the target JS component (module) as an argument.
 
-TODO
+         
+         define([ "jquery", "ko" ], function ($) {
+             
+             'use strict';
+                  
+             return function (target) {
+         
+                 var next = target.next;
+                 target.next = function() {
+                     var result = next.apply(this, arguments);
+                     return  result;
+                 };
+         
+                 var isProcessed = target.isProcessed;
+                 target.isProcessed = function (code) {
+                     var result = isProcessed.apply(this, arguments);
+                     return  result;
+                 };
+         
+                 return target
+             };        
+         });
+       
+###Extend default JS components 
 
-###Disable default Magento JS
-   
-TODO
+**Magento widget**
+
+       define([
+         'jquery',
+         'jquery/ui',
+         'mage/<widget_name>' 
+       ], function($){
+        
+         $.widget('<vendor>.<new_widget_name>', $.mage.<widget.name>, { 
+            
+            //Do things
+            
+         });
+        
+         return $.<vendor>.<new_widget_name>;
+       });
+
+**Magento widget**
+
+       define([
+         '<component_path>' 
+       ], function(<component_alias>){
+        
+         return <component_alias>.extend({
+        
+           defaults: { ... }, // properties with default values
+           ... // methods of your component
+         });
+       });       
+
 
 ## Useful readings
 
