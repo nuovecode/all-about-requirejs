@@ -87,7 +87,7 @@ And define a module that return a callback with the target JS component (module)
          return $.<vendor>.<new_widget_name>;
        });
 
-**Magento widget**
+**Magento component**
 
        define([
          '<component_path>' 
