@@ -38,8 +38,13 @@ _There is also support for a "*" map value which means "for all modules loaded, 
 * **exports**
 * **init**
 
+**callback:** A function to execute after _deps_ have been loaded.
+
 **config:** Pass configuration info into a module
 
+**waitSeconds:** The number of seconds to wait before giving up on loading a script. Setting it to 0 disables the timeout. The default is 7 seconds.
+
+**enforceDefine:** If set to true, an error will be thrown if a script loads that does not call define() or have a shim exports string value that can be checked.
 
 ## Useful readings
 
