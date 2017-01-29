@@ -114,3 +114,4 @@ And define a module that return a callback with the target JS component (module)
 
 * [Magento 2 DevDocs](http://devdocs.magento.com/guides/v2.1/javascript-dev-guide/bk-javascript-dev-guide.html)
 * [Alan Storm](http://alanstorm.com/magento_2_and_requirejs/)
+* [Firebearstudio](https://firebearstudio.com/blog/advanced-development-with-requirejs-magento-2-tutorial.html)
