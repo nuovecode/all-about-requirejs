@@ -1,8 +1,8 @@
-requirejs(['helper/module', 'module-name'], function(ar1, ar2) {
+requirejs(['helper/module', 'module-name'], function(module1, module2) {
 
-    var message = ar1.getMessage();
-    console.log(message);
+    var container = document.getElementById('messages');
 
-    console.log(ar2.getMethod());
+    container.innerHTML = container.innerHTML + '<p>'+ module1.getMessage() + '</p>';
+    container.innerHTML = container.innerHTML +'<p>'+ module2.getMethod() + '</p>';
 
 });

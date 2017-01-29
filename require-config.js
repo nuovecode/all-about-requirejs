@@ -11,5 +11,11 @@ require.config({
         'helper/module' :{
             'deps':['module-name']
         }
+    },
+    config: {
+        'module-name': {
+            size: 'large'
+        }
     }
+
 });
