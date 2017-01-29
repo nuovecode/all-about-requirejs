@@ -13,8 +13,8 @@ require.config({
         }
     },
     config: {
-        'module-name': {
-            size: 'large'
+        "module-name": {
+            key: 'value'
         }
     }
 

@@ -1,11 +1,12 @@
-define([], function(module){
+define(function (require, exports, module) {
 
-    //var size = module.config().size;
     var obj = {};
 
     obj.getMethod = function() {
-        return 'Second Module';
+        var config = module.config().key;
+        return '2. I return from second module and I have the following configuration: ' + config;
     };
     return obj;
+
 
 });
