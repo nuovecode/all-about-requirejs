@@ -1,6 +1,6 @@
 # Require.js and Magento2
 
-[SAMPLES ](https://github.com/nuovecode/all-about-requirejs/blob/master/doc/MAGE2.md)
+[SAMPLES ](https://github.com/nuovecode/magento2-require-stuff)
 
 
 ###requirejs-config.js
