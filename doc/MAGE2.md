@@ -39,7 +39,11 @@ Ex to replace color swatches:
        }    
        
        
-###Override default JS components methods       
+###Override default JS components methods   
+   
+####Mixin   
+
+**Definition:** In object-oriented programming languages, a mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes.[See](https://en.wikipedia.org/wiki/Mixin)
 
 Declare the mixin as an AMD module (Ex. the checkout steps)
        
@@ -76,7 +80,7 @@ And define a module that return a callback with the target JS component (module)
                  return target
              };        
          });
-       
+            
 ###Extend default JS components 
 
 **Magento widget**
@@ -112,6 +116,7 @@ And define a module that return a callback with the target JS component (module)
 
 ## Useful readings
 
-* [Magento 2 DevDocs](http://devdocs.magento.com/guides/v2.1/javascript-dev-guide/bk-javascript-dev-guide.html)
-* [Alan Storm](http://alanstorm.com/magento_2_and_requirejs/)
-* [Firebearstudio](https://firebearstudio.com/blog/advanced-development-with-requirejs-magento-2-tutorial.html)
+* [Magento 2 DevDocs - Javascript dev guide ](http://devdocs.magento.com/guides/v2.1/javascript-dev-guide/bk-javascript-dev-guide.html)
+* [Alan Storm - Magento2 and RequireJs ](http://alanstorm.com/magento_2_and_requirejs/)
+* [Alan Storm - The Curious Case of Magento 2 Mixins ](http://alanstorm.com/the-curious-case-of-magento-2-mixins/)
+* [Firebearstudio - RequireJs magento2 tutorial](https://firebearstudio.com/blog/advanced-development-with-requirejs-magento-2-tutorial.html)
