@@ -49,6 +49,7 @@ _There is also support for a "*" map value which means "for all modules loaded, 
 ## Useful readings
 
 * [Requirejs docs](http://requirejs.org/docs/api.html)
+* [Using RequireJS Map Config](https://www.safaribooksonline.com/blog/2013/10/04/using-requirejs-map-config/)
 
 
 
