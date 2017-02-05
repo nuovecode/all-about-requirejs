@@ -1,11 +1,6 @@
 # All about requirejs
 Everything, absolutely everything, about require.js
 
-### Contents
-
-* [AMD](doc/AMD.md)
-* [require.js and Magento 2](doc/MAGE2.md)
-
 ### Configurations
 
         require.config({
@@ -45,6 +40,11 @@ _There is also support for a "*" map value which means "for all modules loaded, 
 **waitSeconds:** The number of seconds to wait before giving up on loading a script. Setting it to 0 disables the timeout. The default is 7 seconds.
 
 **enforceDefine:** If set to true, an error will be thrown if a script loads that does not call define() or have a shim exports string value that can be checked.
+
+### Related contents
+
+* [AMD](doc/AMD.md)
+* [require.js and Magento 2](doc/MAGE2.md)
 
 ## Useful readings
 
