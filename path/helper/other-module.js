@@ -1,5 +1,5 @@
-define(function (require, exports, module) {
-
+define(['module'], function (module) {
+        
     var obj = {};
 
     obj.getMethod = function() {
@@ -8,6 +8,4 @@ define(function (require, exports, module) {
             'and I have the following configuration: ' + config;
     };
     return obj;
-
-
 });
