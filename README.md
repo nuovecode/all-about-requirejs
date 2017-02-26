@@ -44,7 +44,7 @@ _There is also support for a "*" map value which means "for all modules loaded, 
 ### Related contents
 
 * [AMD](doc/AMD.md)
-* [require.js and Magento 2](doc/MAGE2.md)
+* [RequireJS and Magento 2](doc/MAGE2.md)
 
 ## Useful readings
 
