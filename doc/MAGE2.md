@@ -120,6 +120,6 @@ And define a module that return a callback with the target JS component (module)
 ## Useful readings
 
 * [Magento 2 DevDocs - Javascript dev guide ](http://devdocs.magento.com/guides/v2.1/javascript-dev-guide/bk-javascript-dev-guide.html)
-* [Alan Storm - Magento2 and RequireJs ](http://alanstorm.com/magento_2_and_requirejs/)
+* [Alan Storm - Magento2 and RequireJS ](http://alanstorm.com/magento_2_and_requirejs/)
 * [Alan Storm - The Curious Case of Magento 2 Mixins ](http://alanstorm.com/the-curious-case-of-magento-2-mixins/)
-* [Firebearstudio - RequireJs magento2 tutorial](https://firebearstudio.com/blog/advanced-development-with-requirejs-magento-2-tutorial.html)
+* [Firebearstudio - RequireJS magento2 tutorial](https://firebearstudio.com/blog/advanced-development-with-requirejs-magento-2-tutorial.html)
